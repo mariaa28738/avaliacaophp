@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+    <meta charset="utf-8">
+    <title>Cadastro de Aluno e Carga Horária</title>
+    <style>
+        body {
+            font-family: 'Gotham', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Usar min-height em vez de height */
+            margin: 0;
+            color: rgb(255, 255, 255);
+            background-color: #ffffff;
+            background-image: url('https://i.pinimg.com/originals/d4/56/a9/d456a94cfc4f1cf76dceb26a3b99eba6.gif');
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%; /* Ajusta para ocupar toda a largura */
+            margin: 0 auto;
+            padding: 30px;
+            background-color: rgba(7, 2, 34, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+            overflow: auto; /* Garante que o conteúdo não transborde */
+        }
+        label, input, select {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 10px;
+            border: 1px solid #010529;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #010f1d;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .link {
+            margin-top: 20px;
+            display: block;
+            background-color: #010f1d;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .link:hover {
+            background-color: #0056b3;
+        }
+    </style> 
+</head>
+<body> 
+    <div class="container">
+        <h1>Cadastro de Aluno e Carga Horária</h1>
+        <form action="exercicio11.php" method="post">
+            <label for="aluno">Aluno:</label>
+            <input type="text" id="aluno" name="aluno" required>
+            
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula" required>
+            
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" required>
+            
+            <label for="email">Email Institucional:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            
+            <label for="uf">UF (Estado):</label>
+            <input type="text" id="uf" name="uf" required>
+            
+            <label for="cursohoras">Horas Complementares:</label>
+            <input type="text" id="cursohoras" name="cursohoras" required>
+            
+            <label for="cargah">Carga Horária:</label>
+            <input type="number" id="cargah" name="cargah" required>
+            
+            <input type="submit" value="ENVIAR">
+        </form>
+
+        <h1>Adicionar Carga Horária ao Aluno</h1>
+        <p>Caso o aluno deseje mudar sua carga horária, preencher os campos a seguir.</p><br><br>
+        <form action="desafio11.php" method="post"> 
+            <label for="matricula2">Matrícula:</label>
+            <input type="text" id="matricula2" name="matricula" required>
+            
+            <label for="cargah2">Carga Horária:</label>
+            <input type="number" id="cargah2" name="cargah" required>
+            
+            <input type="submit" value="Enviar">
+        </form>
+
+        <a class="link" href="index.html">Página Inicial</a>
+    </div>
+</body>
+</html>
